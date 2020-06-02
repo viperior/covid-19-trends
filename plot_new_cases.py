@@ -29,7 +29,7 @@ for state in states_to_plot:
 
     plots = [
         ['date_label', 'Daily New Cases - ' + state['state_name'], 'Date'],
-        ['week_number_label', 'Weekly New Cases - ' + state['state_name'], 'Week'],
+        ['week_start_label', 'Weekly New Cases - ' + state['state_name'], 'Week'],
         ['month_number_label', 'Monthly New Cases - ' + state['state_name'], 'Month']
     ]
     

@@ -1,4 +1,10 @@
 # covid-19-trends
-COVID-19 trend analysis
+COVID-19 trend analysis using pandas and plotly
 
-![Example bar chart: daily new COVID-19 cases in Texas](daily-new-cases-texas.png)
+## Weekly New Cases
+
+### Texas
+![Example bar chart: weekly new COVID-19 cases in Texas](weekly-new-cases-texas.png)
+
+### Michigan
+![Example bar chart: weekly new COVID-19 cases in Michigan](weekly-new-cases-michigan.png)

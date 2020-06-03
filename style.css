@@ -1,3 +1,8 @@
 .chart {
     display: block;
 }
+
+.chart iframe {
+    height: 560px;
+    width: 100%;
+}

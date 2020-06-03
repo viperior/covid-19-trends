@@ -6,6 +6,6 @@ COVID-19 trend analysis using pandas and plotly
 ![Example bar chart: weekly new COVID-19 cases in Michigan](weekly-new-cases-michigan.png)
 
 ## Feature Roadmap
-* Add county-level details
-* Create github.io features for project
-* Add email reporting feature for daily, weekly, and monthly updates
+* Add county-level details.
+* Add all states in the United States to the auto-generation list.
+* Add email reporting feature for daily, weekly, and monthly updates.

@@ -20,6 +20,8 @@ with open('data/states_to_plot.json', 'r') as states_to_plot_file:
     states_to_plot = json.load(states_to_plot_file)
 
 for state in states_to_plot:
+    print('Plotting data for ' + state['state_name'] + '...')
+    
     # Plot new cases by time dimension attributes
     state_name_lower = state['state_name'].lower()
     input_data_file_path = 'data/daily_' + state_name_lower + '.json'

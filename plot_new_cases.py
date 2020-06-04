@@ -23,7 +23,7 @@ for state in states_to_plot:
     # Plot new cases by time dimension attributes
     state_name_lower = state['state_name'].lower()
     input_data_file_path = 'data/daily_' + state_name_lower + '.json'
-    output_file_directory = 'sample'
+    output_file_directory = 'charts'
     y_axis_field_name = 'positiveIncrease'
     y_axis_label = 'New Cases'
 

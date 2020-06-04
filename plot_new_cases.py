@@ -1,4 +1,5 @@
 import json
+import os
 import pandas as pd
 import plotly.express as px
 
@@ -14,6 +15,12 @@ def plot_bar_chart(chart_label, input_data_file_path, output_file_directory, x_a
         yaxis_title = y_axis_label
     )
     fig.write_html(output_file_path)
+    
+# Create charts subdirectory if it does not already exist.
+output_file_directory = 'charts'
+
+if not os.path.exists(output_file_directory):
+    os.makedirs(output_file_directory)
 
 # Load states to plot.
 with open('data/states_to_plot.json', 'r') as states_to_plot_file:
@@ -25,7 +32,6 @@ for state in states_to_plot:
     # Plot new cases by time dimension attributes
     state_name_lower = state['state_name'].lower()
     input_data_file_path = 'data/daily_' + state_name_lower + '.json'
-    output_file_directory = 'charts'
     y_axis_field_name = 'positiveIncrease'
     y_axis_label = 'New Cases'
 

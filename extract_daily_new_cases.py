@@ -49,6 +49,9 @@ for state in states_to_plot:
     # Sort data chronologically (ascender order by date).
     filtered_json_data = sorted(filtered_json_data, key=operator.itemgetter('date'))
     
+    # Create output file name.
+    output_file_path = 'data/daily_' + state['state_name'].lower().replace(' ', '_') + '.json'
+    
     # Save state-specific data file.
-    with open('data/daily_' + state['state_name'].lower() + '.json', 'w') as output_file:
+    with open(output_file_path, 'w') as output_file:
         json.dump(filtered_json_data, output_file)

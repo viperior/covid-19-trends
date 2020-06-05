@@ -18,8 +18,15 @@ with open(states_list_file_path, 'r') as states_file:
 with doc:
     h1('COVID-19 Trends')
     
+    with div(cls='state-navigation'):
+        with ul():
+            for state in states_list:
+                with li():
+                    a(state['state_name'], href = '#' + state['state_name'])
+            
     for state in states_list:
         h2(state['state_name'])
+        a(' ', name=state['state_name'])
         
         for chart_type in ['daily', 'weekly', 'monthly']:
             chart_title = chart_type.capitalize() + ' New Cases ' + state['state_name']

@@ -9,7 +9,8 @@ with doc.head:
     meta(description='COVID-19 Trends')
     meta(author='Johnathon Stone')
     link(rel='stylesheet', href='css/styles.css?v=1.0.1')
-
+    link(rel='shortcut icon', type='image/x-icon', href='favicon.ico')
+    
 states_list_file_path = 'data/states_to_plot.json'
 
 with open(states_list_file_path, 'r') as states_file:

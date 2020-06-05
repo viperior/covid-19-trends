@@ -4,7 +4,14 @@ COVID-19 trend analysis using pandas and plotly
 ## Example Chart
 ![Example bar chart: daily new COVID-19 cases in Texas](daily-new-cases-texas.png)
 
-## Feature Roadmap
+## Features
+* Daily, weekly, and monthly charts of new cases for all 50 states in the United States.
+
+## Roadmap
+* Optimize performance by limiting the number of charts initially loaded.
+* Add state-to-state comparison features.
+* Improve display details on charts (show aggregate totals on roll-up charts).
 * Add county-level details.
-* ~~Add all states in the United States to the auto-generation list.~~
+* Add proximity filter (show me new case velocity within 250 km of my current location).
+* Add population normalization features (cases per capita).
 * Add email reporting feature for daily, weekly, and monthly updates.

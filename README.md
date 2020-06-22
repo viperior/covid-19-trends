@@ -5,10 +5,10 @@ COVID-19 trend analysis using pandas and plotly
 ![Example bar chart: daily new COVID-19 cases in Texas](daily-new-cases-texas.png)
 
 ## Features
-* Daily, weekly, and monthly charts of new cases for all 50 states in the United States.
+* Daily, weekly, and monthly charts of new cases for all 50 states in the United States
+* Animated choropleth map of the USA outbreak
 
 ## Roadmap
-* Optimize performance by limiting the number of charts initially loaded.
 * Add state-to-state comparison features.
 * Improve display details on charts (show aggregate totals on roll-up charts).
 * Add county-level details.

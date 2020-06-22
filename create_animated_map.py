@@ -32,4 +32,4 @@ fig.update_layout(
     title_text = 'Positive Cases By State', # Create a Title
     geo_scope='usa',  # Plot only the USA instead of globe
 )
-fig.write_html('charts/animated_map_usa.html')
+fig.write_html('charts/animated-map-usa.html')

@@ -20,6 +20,7 @@ print('Data is ready!')
 # Refresh charts.
 print('Plotting data charts using plotly...')
 import plot_new_cases
+import create_animated_map
 print('Charts updated!')
 
 print('Data reload complete!')

@@ -18,6 +18,10 @@ with open(states_list_file_path, 'r') as states_file:
 
 with doc:
     h1('COVID-19 Trends')
+    h2('Animated Choropleth for USA')
+    
+    with div(cls='chart'):
+        iframe(src='charts/animated-map-usa.html', title='USA Animated Choropleth Map')
     
     with div(cls='state-navigation'):
         with ul():
@@ -26,7 +30,7 @@ with doc:
                     a(state['state_name'], href = '#' + state['state_name'])
             
     for state in states_list:
-        h2(state['state_name'])
+        h3(state['state_name'])
         a(' ', name=state['state_name'])
         
         for chart_type in ['daily', 'weekly', 'monthly']:

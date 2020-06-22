@@ -2,7 +2,7 @@ import dominate
 from dominate.tags import *
 import json
 
-doc = dominate.document(title='COVID-19 Trends')
+doc = dominate.document(title='Animated Map of USA Outbreak - COVID-19 Trends')
 
 with doc.head:
     meta(charset='utf-8')
@@ -17,18 +17,13 @@ with open(states_list_file_path, 'r') as states_file:
     states_list = json.load(states_file)
 
 with doc:
-    h1('COVID-19 Trends')
+    with a(href='index.html'):
+        h1('COVID-19 Trends')
+
+    h2('Animated Choropleth for USA')
     
-    with a(href='animated_map.html'):
-        h2('Animated Choropleth for USA')
-        
-    h2('State Charts')
+    with div(cls='chart'):
+        iframe(src='charts/animated-map-usa.html', title='USA Animated Choropleth Map')
     
-    with div(cls='state-navigation'):
-        with ul():
-            for state in states_list:
-                with li():
-                    a(state['state_name'], href = 'states/' + state['state_name'] + '.html')
-            
-with open('index.html', 'w') as f:
+with open('docs/animated_map.html', 'w') as f:
     f.write(doc.render())

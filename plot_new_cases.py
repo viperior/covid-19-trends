@@ -17,7 +17,7 @@ def plot_bar_chart(chart_label, input_data_file_path, output_file_directory, x_a
     fig.write_html(output_file_path)
     
 # Create charts subdirectory if it does not already exist.
-output_file_directory = 'charts'
+output_file_directory = 'docs/charts'
 
 if not os.path.exists(output_file_directory):
     os.makedirs(output_file_directory)

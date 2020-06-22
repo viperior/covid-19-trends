@@ -10,8 +10,8 @@ df = pd.read_json(path_or_buf = 'data/daily.json')
 df['date'] = df.apply(lambda row: datetime.datetime.strptime(str(row.date), '%Y%m%d'), axis = 1)
 
 # Define the date boundaries.
-start_date = datetime.datetime(2019,12,1)
-end_date = datetime.datetime(2020,6,21)
+start_date = datetime.datetime(2020,2,28)
+end_date = datetime.datetime.now()
 
 # Filter the time range of the data.
 mask = (df['date'] > start_date) & (df['date'] <= end_date)

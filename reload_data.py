@@ -21,7 +21,6 @@ print('Data is ready!')
 print('Plotting data charts using plotly...')
 import plot_new_cases
 import create_animated_map
-import create_chart_web_page
 import build_web_pages
 print('Charts updated!')
 

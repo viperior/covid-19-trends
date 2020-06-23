@@ -10,11 +10,11 @@ with open(states_list_file_path, 'r') as states_file:
 for state in states_list:
     print('Building page for ' + state['state_name'])
     
-    doc = dominate.document(title='Dominate your HTML')
+    doc = dominate.document(title=state['state_name'] + ' COVID-19 Trends')
 
     with doc.head:
         meta(charset='utf-8')
-        meta(description=state['state_name'] + 'COVID-19 Trends')
+        meta(description=state['state_name'] + ' COVID-19 Trends')
         meta(author='Johnathon Stone')
         link(rel='stylesheet', href='../css/styles.css?v=1.0.1')
         link(rel='shortcut icon', type='image/x-icon', href='favicon.ico')

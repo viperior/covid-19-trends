@@ -10,6 +10,7 @@ COVID-19 trend analysis using pandas and plotly
 * Animated choropleth map of the USA outbreak
 
 ## Roadmap
+* Add region categories.
 * Add state-to-state comparison features.
 * Improve display details on charts (show aggregate totals on roll-up charts).
 * Add county-level details.

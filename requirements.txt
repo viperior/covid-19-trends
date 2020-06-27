@@ -1,0 +1,5 @@
+dominate
+pandas
+plotly
+pendulum
+requests

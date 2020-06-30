@@ -30,7 +30,7 @@ fig = px.choropleth(
     df,  # Input Pandas DataFrame
     locations = 'state',  # DataFrame column with locations
     color_continuous_scale = 'redor',
-    range_color = (0, 1000),
+    range_color = (0, max_positive_increase),
     color = 'positiveIncrease',  # DataFrame column with color values
     hover_name = 'date', # DataFrame column hover info
     animation_frame = 'frame',

@@ -1,8 +1,55 @@
+/*
+Color palette:
+https://coolors.co/0a2463-3e92cc-fffaff-d8315b-1e1b18
+*/
+
+a:link {
+    color: #0A2463;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+body {
+    background-image:
+        linear-gradient(
+            to right, 
+            #FFFAFF, #FFD6FF
+        );
+    font-family: 'Roboto';
+    font-size: 24px;
+}
 .chart {
     display: block;
 }
-
 .chart iframe {
     height: 560px;
     width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #D8315B;
+    font-family: 'Roboto Condensed';
+}
+h2 {
+    font-size: 32px;
+}
+.state-navigation ul {
+    column-count: 6;
+    list-style-type: none;
+    padding: 0;
+}
+.state-navigation li a {
+    display: inline-block;
+    font-size: 24px;
+    height: 48px;
+    padding: 6px;
+    width: 100%;
+}
+.state-navigation li a:hover {
+    background-image:
+        linear-gradient(
+            to right, 
+            rgba(10, 36, 99, 0.7), rgba(62, 146, 204, 0.7)
+        );
+    color: #FFFAFF;
 }

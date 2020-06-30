@@ -18,6 +18,8 @@ for state in states_list:
         meta(author='Johnathon Stone')
         link(rel='stylesheet', href='../css/styles.css?v=1.0.1')
         link(rel='shortcut icon', type='image/x-icon', href='favicon.ico')
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto+Condensed')
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto')
     
     with doc:
         h1(state['state_name'])

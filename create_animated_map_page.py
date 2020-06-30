@@ -10,6 +10,8 @@ with doc.head:
     meta(author='Johnathon Stone')
     link(rel='stylesheet', href='css/styles.css?v=1.0.1')
     link(rel='shortcut icon', type='image/x-icon', href='favicon.ico')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto+Condensed')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto')
     
 states_list_file_path = 'data/states_to_plot.json'
 

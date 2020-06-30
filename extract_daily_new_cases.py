@@ -46,7 +46,7 @@ for state in states_to_plot:
         week_start_label = week_start_date_string
         data_point['week_start_label'] = week_start_label
         
-    # Sort data chronologically (ascender order by date).
+    # Sort data chronologically (ascended order by date).
     filtered_json_data = sorted(filtered_json_data, key=operator.itemgetter('date'))
     
     # Create output file name.

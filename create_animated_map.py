@@ -25,12 +25,15 @@ df['frame'] = df.apply(lambda row: (row.date - start_date).days, axis = 1)
 positive_increase_column = df['positiveIncrease']
 max_positive_increase = positive_increase_column.max()
 print('Max positive increase = ' + str(max_positive_increase))
+range_color_values = [1000, max_positive_increase]
+range_color_min_value = min(range_color_values)
+print('Range color max value = ' + str(range_color_min_value))
 
 fig = px.choropleth(
     df,  # Input Pandas DataFrame
     locations = 'state',  # DataFrame column with locations
     color_continuous_scale = 'redor',
-    range_color = (0, max_positive_increase),
+    range_color = (0, range_color_min_value),
     color = 'positiveIncrease',  # DataFrame column with color values
     hover_name = 'date', # DataFrame column hover info
     animation_frame = 'frame',

@@ -1,13 +1,14 @@
 import dominate
 from dominate.tags import *
 import json
+from tqdm import tqdm
 
 states_list_file_path = 'data/states_to_plot.json'
 
 with open(states_list_file_path, 'r') as states_file:
     states_list = json.load(states_file)
 
-for state in states_list:
+for state in tqdm(states_list):
     print('Building page for ' + state['state_name'])
     
     doc = dominate.document(title=state['state_name'] + ' COVID-19 Trends')

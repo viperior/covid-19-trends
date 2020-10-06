@@ -2,6 +2,7 @@ import datetime
 import operator
 import pendulum
 import json
+from tqdm import tqdm
 
 # Load states to plot.
 with open('data/states_to_plot.json', 'r') as states_to_plot_file:
@@ -12,7 +13,7 @@ with open('data/daily.json', 'r') as input_file:
     json_data = json.load(input_file)
 
 # Process each state's data.
-for state in states_to_plot:
+for state in tqdm(states_to_plot):
     filtered_json_data = [x for x in json_data if x['state'] == state['state_abbreviation']]
     
     for data_point in filtered_json_data:

@@ -2,6 +2,7 @@ import json
 import os
 import pandas as pd
 import plotly.express as px
+from tqdm import tqdm
 
 def plot_bar_chart(chart_label, input_data_file_path, output_file_directory, x_axis_field_name, x_axis_label, y_axis_field_name, y_axis_label):
     output_file_name = chart_label.lower().replace(' - ', '-')
@@ -26,7 +27,7 @@ if not os.path.exists(output_file_directory):
 with open('data/states_to_plot.json', 'r') as states_to_plot_file:
     states_to_plot = json.load(states_to_plot_file)
 
-for state in states_to_plot:
+for state in tqdm(states_to_plot):
     print('Plotting data for ' + state['state_name'] + '...')
     
     # Plot new cases by time dimension attributes
